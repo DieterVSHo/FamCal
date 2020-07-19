@@ -1,0 +1,16 @@
+@media (min-width:801px) {
+    .pageContainer{
+        width: 75vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5vh;
+    }
+}
+@media (max-width:800px) {
+    .pageContainer{
+        margin-top: 1em;
+    }
+}
+
+

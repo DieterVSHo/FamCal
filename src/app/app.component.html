@@ -300,10 +300,21 @@
 
 <!-- Toolbar -->
 <mat-toolbar color="primary">
-  <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
-    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-  </button>
-  <span>FamCal</span>
+  <div>
+    <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <span>FamCal</span>
+  </div>
+  <div style="position: absolute; right: 1em;">
+    <button mat-icon-button color="accent" [matMenuTriggerFor]="menu">
+      <mat-icon>person</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Log out</button>
+    </mat-menu>
+  </div>
+
 </mat-toolbar>
 
 <mat-sidenav-container>
@@ -313,7 +324,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <div style="height: 100vh;">
+    <div class="pageContainer">
       <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>

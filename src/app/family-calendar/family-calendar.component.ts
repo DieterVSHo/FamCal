@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CalendarOptions } from '@fullcalendar/angular';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from './../dialog/dialog.component';
 
 @Component({
   selector: 'app-family-calendar',
@@ -8,7 +10,7 @@ import { CalendarOptions } from '@fullcalendar/angular';
 })
 export class FamilyCalendarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   calendarOptions: CalendarOptions = {
     initialView: 'dayGridMonth',
@@ -23,7 +25,12 @@ export class FamilyCalendarComponent implements OnInit {
   }
 
   handleDateClick(arg){
-    alert('date click!'+arg.dateStr);
+    //alert('date click!'+arg.dateStr);
+
+    let dialogref = this.dialog.open(DialogComponent);
+    dialogref.afterClosed().subscribe(result => {
+      console.log(`ok ${result}`);
+    })
   }
 
 }

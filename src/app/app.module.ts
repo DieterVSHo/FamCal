@@ -10,6 +10,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
 
 import { FamilyCalendarComponent } from './family-calendar/family-calendar.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -19,7 +20,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
 @NgModule({
   declarations: [
     AppComponent,
-    FamilyCalendarComponent
+    FamilyCalendarComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FullCalendarModule 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogComponent]
 })
 export class AppModule { }

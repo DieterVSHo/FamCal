@@ -26,7 +26,6 @@ export class FamilyCalendarComponent implements OnInit {
 
   handleDateClick(arg){
     //alert('date click!'+arg.dateStr);
-
     let dialogref = this.dialog.open(DialogComponent);
     dialogref.afterClosed().subscribe(result => {
       console.log(`ok ${result}`);

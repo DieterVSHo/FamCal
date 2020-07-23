@@ -308,10 +308,10 @@
   </div>
   <div style="position: absolute; right: 1em;">
     <button mat-icon-button color="accent" [matMenuTriggerFor]="menu">
-      <mat-icon>person</mat-icon>
+      <mat-icon >person</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>Log out</button>
+      <button mat-menu-item (click)="btnLogout()">Log out</button>
     </mat-menu>
   </div>
 </mat-toolbar>

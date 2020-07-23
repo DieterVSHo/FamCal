@@ -1,0 +1,27 @@
+.pageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 86vh;
+    position: relative;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+}
+
+.contentContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.buttonContainer > button{
+    margin: 1em;
+}
+
+mat-card {
+    margin-top: -10em;
+}

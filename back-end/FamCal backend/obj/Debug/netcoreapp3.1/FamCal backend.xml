@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FamCal backend</name>
+    </assembly>
+    <members>
+        <member name="M:FamCal_backend.Controllers.EventsController.GetEvent(System.Int32)">
+            <summary>
+            Get the event with given id
+            </summary>
+            <param name="id">the id of the event</param>
+            <returns>The event</returns>
+        </member>
+    </members>
+</doc>

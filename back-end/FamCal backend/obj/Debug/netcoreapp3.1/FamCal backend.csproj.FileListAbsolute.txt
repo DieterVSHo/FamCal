@@ -1,0 +1,52 @@
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\FamCal backend.exe
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.AssemblyInfoInputs.cache
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.AssemblyInfo.cs
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.RazorTargetAssemblyInfo.cache
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\obj\Debug\netcoreapp3.1\staticwebassets\FamCal backend.StaticWebAssets.Manifest.cache
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\obj\Debug\netcoreapp3.1\staticwebassets\FamCal backend.StaticWebAssets.xml
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\FamCal backend.deps.json
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\FamCal backend.runtimeconfig.json
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\FamCal backend.runtimeconfig.dev.json
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\FamCal backend.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\FamCal backend.pdb
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.DotNet.InternalAbstractions.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Namotion.Reflection.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\NJsonSchema.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\NSwag.Annotations.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\NSwag.AspNetCore.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\NSwag.Core.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\NSwag.Generation.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\NSwag.Generation.AspNetCore.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.csprojAssemblyReference.cache
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.csproj.CopyComplete
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.pdb
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.genruntimeconfig.cache
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\FamCal backend.xml
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.xml
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Dieter\source\repos\FamCal backend\FamCal backend\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll

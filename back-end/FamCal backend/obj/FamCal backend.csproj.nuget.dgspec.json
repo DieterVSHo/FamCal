@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dieter\\source\\repos\\FamCal backend\\FamCal backend\\FamCal backend.csproj": {}
+    "C:\\Users\\Dieter\\Documents\\HoGent\\FamCal\\back-end\\FamCal backend\\FamCal backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dieter\\source\\repos\\FamCal backend\\FamCal backend\\FamCal backend.csproj": {
+    "C:\\Users\\Dieter\\Documents\\HoGent\\FamCal\\back-end\\FamCal backend\\FamCal backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dieter\\source\\repos\\FamCal backend\\FamCal backend\\FamCal backend.csproj",
+        "projectUniqueName": "C:\\Users\\Dieter\\Documents\\HoGent\\FamCal\\back-end\\FamCal backend\\FamCal backend.csproj",
         "projectName": "FamCal backend",
-        "projectPath": "C:\\Users\\Dieter\\source\\repos\\FamCal backend\\FamCal backend\\FamCal backend.csproj",
+        "projectPath": "C:\\Users\\Dieter\\Documents\\HoGent\\FamCal\\back-end\\FamCal backend\\FamCal backend.csproj",
         "packagesPath": "C:\\Users\\Dieter\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dieter\\source\\repos\\FamCal backend\\FamCal backend\\obj\\",
+        "outputPath": "C:\\Users\\Dieter\\Documents\\HoGent\\FamCal\\back-end\\FamCal backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dieter\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,7 +48,15 @@
             },
             "NSwag.AspNetCore": {
               "target": "Package",
-              "version": "[13.6.2, )"
+              "version": "[13.7.0, )"
+            },
+            "NSwag.SwaggerGeneration": {
+              "target": "Package",
+              "version": "[12.3.0, )"
+            },
+            "System.Security.Principal.Windows": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             },
             "System.Text.Encoding": {
               "target": "Package",

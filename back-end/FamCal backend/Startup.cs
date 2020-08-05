@@ -15,7 +15,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
-
+using NSwag.Generation.Processors.Security;
 
 namespace FamCal_backend
 {
@@ -40,6 +40,15 @@ namespace FamCal_backend
                 c.Title = "Family Calendar API";
                 c.Version = "v1";
                 c.Description = "The Family Calendar API documentation description.";
+                c.DocumentProcessors.Add(new SecurityDefinitionAppender("JWT Token", new SwaggerSecurityScheme
+                {
+                    Type = SwaggerSecuritySchemeType.ApiKey,
+                    Name = "Authorization",
+                    In = SwaggerSecurityApiKeyLocation.Header,
+                    Description = "Copy 'Bearer' + valid JWT token into field"
+                }));
+                c.OperationProcessors.Add(new OperationSecurityScopeProcessor("JWT Token"));
+ 
             }); //for OpenAPI 3.0 else AddSwaggerDocument();
 
             services.AddCors(options =>
@@ -59,7 +68,7 @@ namespace FamCal_backend
                 Encoding.UTF8.GetBytes(Configuration["Tokens:Key"])),
                     ValidateIssuer = false,
                     ValidateAudience = false,
-                    RequireExpirationTime = true //Ensure token hasn't expired
+                    fExpirationTime = true //Ensure token hasn't expired
                 };
             });
         }
@@ -80,6 +89,8 @@ namespace FamCal_backend
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {

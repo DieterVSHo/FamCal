@@ -11,8 +11,9 @@ import interactionPlugin from '@fullcalendar/interaction';
 
 import { FamilyCalendarComponent } from './family-calendar/family-calendar.component';
 import { DialogComponent } from './dialog/dialog.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
+import { UserModule } from './user/user.module';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -32,7 +33,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FullCalendarModule 
+    FullCalendarModule,
+    UserModule 
   ],
   providers: [],
   bootstrap: [AppComponent],

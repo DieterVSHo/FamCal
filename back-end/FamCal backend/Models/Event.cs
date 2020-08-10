@@ -18,7 +18,7 @@ namespace FamCal_backend.Models
 
         public DateTime endDate { get; set; }
         
-        public string owner { get; set; }
+        public User owner { get; set; }
         #endregion
     }
 }

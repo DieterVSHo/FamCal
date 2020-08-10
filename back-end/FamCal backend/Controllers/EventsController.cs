@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using FamCal_backend.Models;
 using FamCal_backend.DTOs;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace FamCal_backend.Controllers
 {
@@ -20,6 +22,8 @@ namespace FamCal_backend.Controllers
         }
 
         [HttpGet]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]     //afschermen methode
+
         public IEnumerable<Event> GetEvents()
         {
             return _eventRepository.GetAll();

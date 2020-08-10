@@ -104,3 +104,10 @@ C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\obj\Debug\netcor
 C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.genruntimeconfig.cache
 C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
 C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\NSwag.SwaggerGeneration.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.csproj.CoreCompileInputs.cache
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll

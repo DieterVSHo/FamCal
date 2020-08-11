@@ -89,5 +89,6 @@ namespace FamCal_backend.Controllers
             }
             return BadRequest();
         }
+
     }
 }

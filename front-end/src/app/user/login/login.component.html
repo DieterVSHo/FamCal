@@ -1,1 +1,30 @@
-<p>login works!</p>
+<div class="pageContainer">
+    <mat-card>
+      <mat-card-title>Login</mat-card-title>
+      <mat-card-content>
+        <form class="login-form">
+          <div class="contentContainer">
+            <mat-form-field class="example-full-width">
+              <mat-label>E-mail</mat-label>
+              <input matInput type="email" id="email">
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" id="password" >
+            </mat-form-field>
+            <div class="buttonContainer">
+              <button mat-raised-button color="primary">
+                Login
+              </button>
+              <a [routerLink]="'/register'" mat-button color="primary">
+                Register
+              </a>
+            </div>
+          </div>
+        </form>          
+      </mat-card-content>
+      
+    </mat-card>
+  </div>
+  

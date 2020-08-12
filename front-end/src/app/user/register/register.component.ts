@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, Validators, AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
+import { FormGroup, Validators, AbstractControl, ValidationErrors, ValidatorFn,FormBuilder } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-register',
@@ -11,10 +13,15 @@ import { map } from 'rxjs/operators';
 export class RegisterComponent implements OnInit {
 
   public user: FormGroup;
+  public errorMessage: string = '';
 
-  constructor() { }
+  constructor(
+    private authService: AuthenticationService,
+    private router: Router,
+    private fb: FormBuilder
+  ) {}
 
-  ngOnInit(){
+  ngOnInit() : void{
     this.user = this.fb.group({
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
@@ -27,6 +34,29 @@ export class RegisterComponent implements OnInit {
         confirmPassword: ['', Validators.required]
       }, { validator: comparePasswords })
     });
+  }
+
+  getErrorMessage(errors: any) {
+    if (!errors) {
+      return null;
+    }
+    if (errors.required) {
+      return 'is required';
+    } else if (errors.minlength) {
+      return `needs at least ${errors.minlength.requiredLength} characters (got ${errors.minlength.actualLength})`;
+    } else if (errors.hasNumber) {
+      return `needs at least 1 number`;
+    } else if (errors.hasUpperCase) {
+      return `needs at least 1 upper case letter`;
+    } else if (errors.hasNumber) {
+      return `needs at least 1 lower case letter`;
+    } else if (errors.userAlreadyExists) {
+      return `user already exists`;
+    } else if (errors.email) {
+      return `not a valid email address`;
+    } else if (errors.passwordsDiffer) {
+      return `passwords do not match`;
+    }
   }
 }
 

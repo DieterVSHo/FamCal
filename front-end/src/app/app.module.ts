@@ -11,9 +11,11 @@ import interactionPlugin from '@fullcalendar/interaction';
 
 import { FamilyCalendarComponent } from './family-calendar/family-calendar.component';
 import { DialogComponent } from './dialog/dialog.component';
-import { LoginComponent } from './user/login/login.component';
-import { RegisterComponent } from './user/register/register.component';
 import { UserModule } from './user/user.module';
+import { ReactiveFormsModule, FormsModule  } from '@angular/forms';
+
+import { httpInterceptorProviders } from './http-interceptors/index';
+import { HttpClientModule } from '@angular/common/http';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -25,8 +27,6 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     AppComponent,
     FamilyCalendarComponent,
     DialogComponent,
-    LoginComponent,
-    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,9 +34,12 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     BrowserAnimationsModule,
     MaterialModule,
     FullCalendarModule,
-    UserModule 
+    UserModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [AppComponent],
   entryComponents: [DialogComponent]
 })

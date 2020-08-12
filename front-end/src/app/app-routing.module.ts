@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { FamilyCalendarComponent } from './family-calendar/family-calendar.component';
 import { LoginComponent } from './user/login/login.component';
 import { RegisterComponent } from './user/register/register.component';
+import { AuthGuard } from './user/auth.guard';
 
 
 const routes: Routes = [
   { path: '',
     redirectTo: '/login',
-    pathMatch: 'full'
+    pathMatch: 'full',
+    canActivate: [ AuthGuard ],
   },
   { path: 'familycalendar', component: FamilyCalendarComponent },
   { path: 'login', component: LoginComponent},

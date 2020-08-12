@@ -1,6 +1,15 @@
 import { User } from './user.model';
 
+interface EventJson {
+    id: number;
+    title: string;
+    owner: OwnerJson[];
+    startDate: string;
+    endDate: string;
+  }
+
 export class Event {
+    private _id: number;
     constructor(
         private _title: string,
         private _owner: User,
@@ -19,8 +28,23 @@ export class Event {
         this._owner = owner;
     }
 
-    // static fromJSON(json: EventJson): Event {
-    //     const event = new Event(json.title, json.owner, new Date(json.date));
-    //     return event;
-    // }
+    static fromJSON(json: EventJson): Event {
+        const rec = new Event(
+          json.title,
+          json.owner,
+          new Date(json.startDate),
+          new Date(json.endDate),
+        );
+        rec._id = json.id;
+        return rec;
+      }
+    
+      toJSON(): EventJson {
+        return <EventJson>{
+            title: this.title,
+            owner: "owner",
+            startDate: this.startDate.toString(),
+            endDate: this.endDate.toString(),
+        };
+      }
   }

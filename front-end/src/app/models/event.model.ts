@@ -18,6 +18,10 @@ export class Event {
     get title(): string {
       return this._title;
     }
+    get id(): number {
+        return this._id;
+      }
+  
 
     addEvent(title: string, startDate: Date, endDate: Date, owner: string) {
         this._title = title;

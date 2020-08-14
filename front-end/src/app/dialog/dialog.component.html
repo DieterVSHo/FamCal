@@ -1,5 +1,52 @@
 <h2 mat-dialog-title>Add new event</h2>
-<mat-dialog-content>here comes a form</mat-dialog-content>
+<mat-dialog-content>
+    <form>
+        <div fxLayout="column wrap" fxLayoutGap="32px">
+            <mat-form-field>
+                <input
+                    matInput
+                    id="title"
+                    placeholder="Title"
+                    aria-label="title"
+                    formControlName="title"/>
+                <mat-error
+                    *ngIf="event.get('titel').errors && event.get('titel').touched"
+                >
+                    {{ getErrorMessage(event.get('titel').errors) }}
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <input
+                    matInput
+                    id="startTime"
+                    type="time"
+                    placeholder="Start Time"
+                    aria-label="startTime"
+                    formControlName="startTime"/>
+                <!-- <mat-error
+                    *ngIf="event.get('titel').errors && event.get('titel').touched"
+                >
+                    {{ getErrorMessage(event.get('titel').errors) }}
+                </mat-error> -->
+            </mat-form-field>
+            <mat-form-field>
+                <input
+                    matInput
+                    id="endTime"
+                    type="time"
+                    placeholder="End Time"
+                    aria-label="endTime"
+                    formControlName="endTime"/>
+                <!-- <mat-error
+                    *ngIf="event.get('titel').errors && event.get('titel').touched"
+                >
+                    {{ getErrorMessage(event.get('titel').errors) }}
+                </mat-error> -->
+            </mat-form-field>
+        </div>
+    </form>
+</mat-dialog-content>
 <mat-dialog-actions>
+    <button mat-button>Toevoegen</button>
     <button mat-button mat-dialog-close mat-dialog-close="">sluiten</button>
-</mat-dialog-actions>
+</mat-dialog-actions>    

@@ -16,6 +16,8 @@ import { ReactiveFormsModule, FormsModule  } from '@angular/forms';
 
 import { httpInterceptorProviders } from './http-interceptors/index';
 import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -37,7 +39,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     UserModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    FlexLayoutModule,
   ],
   providers: [httpInterceptorProviders],
   bootstrap: [AppComponent],

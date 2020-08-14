@@ -12,13 +12,17 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using NSwag.Generation.Processors.Security;
 using Swashbuckle.AspNetCore.Swagger;
 using NSwag.AspNetCore;
-
+using FamCal_backend.Data;
+using FamCal_backend.Data.Repositories;
+using FamCal_backend.Models;
 
 namespace FamCal_backend
 {
@@ -36,6 +40,37 @@ namespace FamCal_backend
         {
             services.AddControllers();
             services.AddSwaggerDocument();
+
+            services.AddDbContext<FamCalContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("FamCalContext")));
+
+            services.AddScoped<EventDataInitializer>();
+            services.AddScoped<IEventRepository, EventRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+
+            services.AddIdentity<IdentityUser, IdentityRole>(cfg => cfg.User.RequireUniqueEmail = true).AddEntityFrameworkStores<FamCalContext>();
+
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Password settings.
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 1;
+
+                // Lockout settings.
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.AllowedForNewUsers = true;
+
+                // User settings.
+                options.User.AllowedUserNameCharacters =
+                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+                options.User.RequireUniqueEmail = true;
+            });
 
             services.AddOpenApiDocument(c =>
             {
@@ -58,7 +93,7 @@ namespace FamCal_backend
                 options.AddPolicy("AllowAllOrigins", builder =>
                 builder.AllowAnyOrigin()));
 
-            services.AddAuthentication(x => {
+            /*services.AddAuthentication(x => {
                 x.DefaultAuthenticateScheme =
                 JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(x => {
@@ -74,11 +109,11 @@ namespace FamCal_backend
                     RequireExpirationTime = true,
                     //fExpirationTime = true //Ensure token hasn't expired
                 };
-            });
+            });*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, EventDataInitializer EventDataInitializer)
         {
             if (env.IsDevelopment())
             {
@@ -92,14 +127,16 @@ namespace FamCal_backend
 
             app.UseRouting();
 
-            app.UseAuthentication();
+/*            app.UseAuthentication();
 
-            app.UseAuthorization();
+            app.UseAuthorization();*/
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+            EventDataInitializer.InitializeData(); //.Wait();
 
             app.UseCors("AllowAllOrigins");
         }

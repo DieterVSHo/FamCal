@@ -7,10 +7,8 @@ namespace FamCal_backend.Models
 {
     public interface IUserRepository
     {
-        User GetBy(int id);
+        User GetBy(string email);
         void Add(User user);
-        void Delete(User user);
-        void Update(User user);
         void SaveChanges();
     }
 }

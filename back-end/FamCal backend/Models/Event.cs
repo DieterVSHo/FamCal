@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -10,15 +11,15 @@ namespace FamCal_backend.Models
         #region Properties
         public int Id { get; set; }
 
-        
-        //[Required]
-        public string title { get; set; }
+        [Required]
+        public string Title { get; set; }
 
-        public DateTime startDate { get; set; }
-
-        public DateTime endDate { get; set; }
+        [Required]
+        public DateTime StartDate { get; set; }
+        [Required]
+        public DateTime EndDate { get; set; }
         
-        public User owner { get; set; }
+        public User Owner { get; set; }
         #endregion
     }
 }

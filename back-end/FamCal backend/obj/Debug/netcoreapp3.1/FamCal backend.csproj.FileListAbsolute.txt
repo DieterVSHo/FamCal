@@ -107,7 +107,38 @@ C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcor
 C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\NSwag.SwaggerGeneration.dll
 C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.csproj.CoreCompileInputs.cache
 C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\obj\Debug\netcoreapp3.1\FamCal backend.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Dieter\Documents\HoGent\FamCal\back-end\FamCal backend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll

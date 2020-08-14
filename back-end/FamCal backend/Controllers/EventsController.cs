@@ -51,11 +51,11 @@ namespace FamCal_backend.Controllers
         {
             Event evToCreate = new Event()
             {
-                title = ev.title,
-                startDate = ev.startDate,
-                endDate = ev.endDate,
-                owner = ev.owner
-            };
+                Title = ev.title,
+                StartDate = ev.startDate,
+                EndDate = ev.endDate,
+/*                Owner = ev.owner
+*/            };
             _eventRepository.Add(evToCreate);    
             _eventRepository.SaveChanges();
             return CreatedAtAction(nameof(GetEvent),
@@ -75,7 +75,7 @@ namespace FamCal_backend.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteRecipe(int id)
+        public IActionResult DeleteEvent(int id)
         {
             Event ev = _eventRepository.GetBy(id);
             if (ev == null)

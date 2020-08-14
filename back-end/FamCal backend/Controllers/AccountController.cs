@@ -90,5 +90,14 @@ namespace FamCal_backend.Controllers
             return BadRequest();
         }
 
+        [AllowAnonymous]
+        [HttpGet("checkusername")]
+        public async Task<ActionResult<Boolean>>
+        CheckAvailableUserName(string email)
+        {
+            var user = await _userManager.FindByNameAsync(email);
+            return user == null;
+        }
+
     }
 }

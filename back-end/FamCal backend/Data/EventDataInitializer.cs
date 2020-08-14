@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace FamCal_backend.Data
 {
+    // to rename to famcaldatainit
     public class EventDataInitializer
     {
         private readonly FamCalContext _dbContext;

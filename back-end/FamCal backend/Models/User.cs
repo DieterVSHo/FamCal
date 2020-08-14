@@ -14,7 +14,7 @@ namespace FamCal_backend.Models
         public String email { get; set; }
 
         public String password { get; set; }
-        //public IEnumerable<Event> FavoriteRecipes => Favorites.Select(f => f.Recipe);
+        //public IEnumerable<Event> FavoriteRecipes => Favorites.Select(f => f.Recipe); //favorites -> userrecipes
 
 
         public User(String email, String firstName, String lastName)

@@ -16,16 +16,18 @@ namespace FamCal_backend.Controllers
     public class EventsController : ControllerBase
     {
         private readonly IEventRepository _eventRepository;
+        private readonly IUserRepository _userRepository;
+
         public EventsController(IEventRepository context)
         {
             _eventRepository = context;
         }
 
         [HttpGet]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]     //afschermen methode
-
-        public IEnumerable<Event> GetEvents()
+/*        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]     //afschermen methode
+*/        public IEnumerable<Event> GetEvents()
         {
+            User user = _userRepository.GetBy(User.Identity.Name);
             return _eventRepository.GetAll();
         }
 
@@ -54,7 +56,7 @@ namespace FamCal_backend.Controllers
                 Title = ev.title,
                 StartDate = ev.startDate,
                 EndDate = ev.endDate,
-/*                Owner = ev.owner
+/*              Owner = ev.owner
 */            };
             _eventRepository.Add(evToCreate);    
             _eventRepository.SaveChanges();

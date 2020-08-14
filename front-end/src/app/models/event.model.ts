@@ -1,9 +1,7 @@
-import { User } from './user.model';
-
 interface EventJson {
     id: number;
     title: string;
-    owner: OwnerJson[];
+    owner: string;
     startDate: string;
     endDate: string;
   }
@@ -12,7 +10,7 @@ export class Event {
     private _id: number;
     constructor(
         private _title: string,
-        private _owner: User,
+        private _owner: string,
         private _startDate = new Date(),
         private _endDate = new Date()
     ) {}
@@ -21,7 +19,7 @@ export class Event {
       return this._title;
     }
 
-    addEvent(title: string, startDate: Date, endDate: Date, owner: User) {
+    addEvent(title: string, startDate: Date, endDate: Date, owner: string) {
         this._title = title;
         this._startDate = startDate;
         this._endDate = endDate;
@@ -43,8 +41,8 @@ export class Event {
         return <EventJson>{
             title: this.title,
             owner: "owner",
-            startDate: this.startDate.toString(),
-            endDate: this.endDate.toString(),
+            startDate: this._startDate.toString(),
+            endDate: this._endDate.toString(),
         };
       }
   }
